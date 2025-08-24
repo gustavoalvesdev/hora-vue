@@ -29,11 +29,13 @@
         components: {
             Picture
         },
+        props: {
+            email: String,
+            esta_trabalhando: Boolean
+        },
         data() {
             return {
-                esta_trabalhando: false,
                 mostrar_email: false,
-                email: 'gustavoalvesdasilva@outlook.com',
                 meu_link: 'https://gustavoalvesdev.com.br',
                 texto_botao: 'Mostrar e-mail',
                 backend_technologies: [
